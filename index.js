@@ -554,7 +554,7 @@ class WsTtsStreamingProvider {
                     // Play audio immediately as each chunk arrives so the user
                     // hears the first sentence within ~1 s instead of waiting
                     // for all sentences to be synthesized.
-                    scheduleAudioChunk(ev.data.slice(0));
+                    // scheduleAudioChunk(ev.data.slice(0));
 
                     // Also decode for merging into the returned blob so ST's
                     // internal audio pipeline (auto-read, Narrate history) gets
